@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 
   .card {
     background-color: hsl(0, 0%, 100%);
@@ -9,7 +9,7 @@
   }
 
   .card-img {
-    background-image: url("../images/image-product-mobile.jpg");
+    background-image: url("images/image-product-mobile.jpg");
     background-size: cover;
     width: 350px;
     height: 250px;
