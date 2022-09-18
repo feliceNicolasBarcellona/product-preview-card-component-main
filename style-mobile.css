@@ -10,6 +10,7 @@
 
   .card-img {
     background-image: url("images/image-product-mobile.jpg");
+    background-size: cover;
     width: 350px;
     height: 250px;
     border-bottom-left-radius: 0px;
