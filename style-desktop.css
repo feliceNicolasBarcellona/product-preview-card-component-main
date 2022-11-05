@@ -1,133 +1,142 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --font-size-14: 14px;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-family-fraunces: 'Fraunces', serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: hsl(30, 38%, 92%);
- 
+html {
+  font-size: var(--font-size-14);
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background-color: var(--cream);
+}
+
+main {
+  width: 100%;
   height: 98vh;
-  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  width: 600px;
-  height: 450px;
-  border-radius: 12px;
+  width: 602px;
+  height: 451px;
+  background-color: var(--white);
+  border-radius: 0.714rem;
   display: flex;
-  flex-wrap: nowrap;
 }
 
-.card-img {
-  background-image: url("images/image-product-desktop.jpg");
-  width: 300px;
+.card .product-image {
+  background-image: url(images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
-.card-body {
-  width: 300px; 
-  padding: 30px;
-}
-
-.font {
-  font-family: 'Montserrat', sans-serif; 
-  font-weight: 500; 
-  color: hsl(228, 12%, 48%); 
-}
-
-.first-label {
-  text-transform: uppercase; 
-  font-size: 12px;
-  letter-spacing: 0.4rem;
-}
-
-.title {
-  font-family: 'Fraunces', serif; 
-  font-weight: 700;
-  margin-top: 20px;
-  font-size: 33px; 
-  line-height: 2.2rem; 
-  color:hsl(212, 21%, 14%);
+  width: 170%;
+  border-radius: 0.714rem 0rem 0rem 0.714rem;
 }
 
 .body {
-  margin-top: 20px; 
-  font-size: 14px; 
-  line-height: 1.5rem;
-  word-spacing: 0.1rem;
+  padding: 2.428rem 2.214rem;
+}
+
+.body .perfume {
+  text-transform: uppercase;
+  font-family: var(--font-family-montserrat);
+  color: var(--dark-grayish-blue);
+  font-weight: var(--font-weight-500);
+  font-size: 0.821rem;
+  letter-spacing: 0.392rem;
+}
+
+.body h2 {
+  font-size: 2.285rem;
+  margin-top: 1.642rem;
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family-fraunces);
+  letter-spacing: 0.02rem;
+  color: var(--very-dark-blue);
+}
+
+.body .description {
+  font-family: var(--font-family-montserrat);
+  color: var(--dark-grayish-blue);
+  font-weight: var(--font-weight-500);
+  margin-top: 1.714rem;
+  line-height: 1.65em;
 }
 
 .prices-container {
   display: flex; 
-  align-items: center; 
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 2.071rem;
 }
 
-.price {
-  font-size: 33px; 
-  line-height: 2.5rem; 
-  font-family: 'Fraunces', serif;
-  color: hsl(158, 36%, 37%);
-  font-weight: 500;
+.prices-container .price {
+  font-size: 2.285rem;
+  letter-spacing: 0;
+  font-family: var(--font-family-fraunces);
+  color: var(--dark-cyan);
+  font-weight: var(--font-weight-500);
 }
 
-.old-price {
+.prices-container .old-price {
   color: hsl(228, 12%, 48%);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px; 
-  font-weight: 500; 
-  margin-left: 22px;
+  font-family: var(--font-family-montserrat);
+  font-size: 0.964rem; 
+  font-weight: var(--font-weight-500); 
+  margin-left: 1.428rem;
 }
 
-.button {
-  height: 50px; 
-  width: 100%;
-  background-color:hsl(158, 36%, 37%);
-  border: none; 
-  border-radius: 8px;
-}
-
-.button-container {
+.btn {
+  border:none;
+  background-color: var(--dark-cyan);
   display: flex;
+  width: 100%;
+  height: 48px;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  border-radius: 10px;
+  margin-top: 28px;
 }
 
-.button-icon {
-  vertical-align: middle;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+.btn .icon {
+  width: 1.071rem; 
+  height: 1.142rem;
 }
 
-.button-label {
-  color: hsl(0, 0%, 100%); 
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700; 
-  margin-left: 8px;
+.btn .label {
+  color: var(--white);
+  margin-left: 0.857rem;
+  font-size: 1.034rem; 
+  font-family: var(--font-family-montserrat); 
+  font-weight: var(--font-weight-700);
 }
 
-.button:hover{
+.btn:hover{
   background-color: hsl(163, 86%, 14%);
   cursor: pointer;
 }
 
 .attribution { 
-  font-size: 11px; 
+  font-size: 0.7857rem; 
   text-align: center;
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--dark-cyan); 
 }
-
